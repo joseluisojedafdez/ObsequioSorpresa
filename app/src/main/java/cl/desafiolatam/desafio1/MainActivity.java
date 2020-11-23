@@ -85,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
         imgLeft.setVisibility(View.VISIBLE);
         imgCenter.setVisibility(View.VISIBLE);
         imgRight.setVisibility(View.VISIBLE);
+        tvTitle.setVisibility(View.VISIBLE);
         replay.setVisibility(View.INVISIBLE);
         tvIntro.setText("Elige una de estas 3 cajas sorpresa y recibe un obsequio");
     }
@@ -98,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
             imgCenter.setVisibility(View.INVISIBLE);
             imgRight.setVisibility(View.INVISIBLE);
             replay.setVisibility(View.VISIBLE);
+            tvTitle.setVisibility(View.INVISIBLE);
             tvIntro.setText("¡¡¡Felicitaciones!!!, has ganado: "+ obsequio.getNombre());
 
         }
