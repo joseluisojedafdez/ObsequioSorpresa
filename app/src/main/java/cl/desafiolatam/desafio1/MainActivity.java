@@ -85,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
         imgLeft.setVisibility(View.VISIBLE);
         imgCenter.setVisibility(View.VISIBLE);
         imgRight.setVisibility(View.VISIBLE);
+        replay.setVisibility(View.INVISIBLE);
         tvIntro.setText("Elige una de estas 3 cajas sorpresa y recibe un obsequio");
     }
 
