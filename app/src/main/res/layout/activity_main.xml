@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_gradient"
@@ -13,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="34dp"
+        app:layout_constraintGuide_begin="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,11 +26,11 @@
         app:layout_constraintGuide_percent="0.4" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_Title"
+        style="@style/header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/welcome"
-        style="@style/header"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -39,6 +40,7 @@
         app:layout_constraintVertical_bias="0.077" />
 
     <TextView
+        android:id="@+id/tv_intro"
         style="@style/header"
         android:layout_width="290dp"
         android:layout_height="84dp"
@@ -47,12 +49,12 @@
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.073" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_Title"
+        app:layout_constraintVertical_bias="0.081" />
 
     <ImageView
         android:id="@+id/imageViewLeft"
@@ -91,9 +93,20 @@
         android:layout_marginTop="96dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewLeft"
         app:srcCompat="@drawable/ic_gift_pizza" />
+
+    <ImageButton
+        android:id="@+id/imgbt_replay"
+        android:layout_width="74dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="24dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_replay" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
